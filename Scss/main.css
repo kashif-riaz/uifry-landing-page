@@ -1,0 +1,603 @@
+html {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Extralight";
+  src: url("../ClashDisplay-Variable.ttf");
+}
+body {
+  font-family: "ClashDisplay-Extralight";
+}
+
+header {
+  padding-block: 1rem;
+  position: relative;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.navbar-nav {
+  text-align: center;
+  gap: 1rem;
+}
+
+.navbar-brand {
+  margin-right: 5rem;
+}
+
+.button {
+  border: none;
+  padding: 1.6rem 4.6rem;
+  font-size: 1.8rem;
+  background-color: #000;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hero-star-parent {
+  position: relative;
+}
+
+.hero-star {
+  position: absolute;
+  transform: rotate(45deg);
+  top: 2%;
+  left: 0;
+}
+
+.hero-star-right {
+  position: absolute;
+  top: -3%;
+  right: 0;
+}
+
+.hero-parent .hero-content {
+  padding-top: 12rem;
+}
+.hero-parent .hero-content h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: #000;
+}
+.hero-parent .hero-content p {
+  margin-block: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+  color: #000;
+}
+.hero-parent .hero-content .button-flex {
+  gap: 4rem;
+}
+.hero-parent .hero-content button {
+  border: none;
+  padding: 1.6rem 4.6rem;
+  font-size: 1.8rem;
+  background-color: #000;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+.hero-parent .hero-content button img {
+  margin-left: 0.8rem;
+}
+.hero-parent .hero-content .play {
+  gap: 1rem;
+  cursor: pointer;
+}
+.hero-parent .hero-content .play span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.hero-parent .hero-content .design-img {
+  margin-top: 1.8rem;
+}
+
+.feature-star-parent {
+  position: relative;
+}
+
+.feature-star {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.feature-section {
+  padding-block: 6rem 0rem;
+}
+
+.feature-content h3 {
+  font-size: 1.8rem;
+  color: #f55;
+  font-weight: 500;
+}
+.feature-content h2 {
+  font-size: 4.8rem;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+.feature-content .feature-list {
+  gap: 1.2rem;
+}
+.feature-content .feature-list .header h4 {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.feature-content .feature-list .feature-header-body p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+
+.urify-star-parent {
+  position: relative;
+}
+
+.urify-star {
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.choose-list {
+  gap: 2.3rem;
+}
+.choose-list .choose-header {
+  gap: 1.5rem;
+}
+.choose-list .choose-header h4 {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.choose-list .choose-header-body p {
+  max-width: 500px;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+}
+
+.customize-star-parent {
+  position: relative;
+}
+
+.customize-star {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+}
+
+.about-star-parent {
+  position: relative;
+}
+
+.about-star {
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: -7%;
+  left: 0;
+}
+
+.about-us-section {
+  padding-block: 8rem;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.about-heading h3 {
+  padding-bottom: 0.7rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+}
+.about-heading h2 {
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.about-us-content {
+  padding: 1rem 18rem 1rem 1rem;
+}
+.about-us-content h3 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: #000;
+  font-weight: 600;
+}
+.about-us-content p {
+  padding-block: 2.4rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #000;
+  font-weight: 500;
+}
+.about-us-content .avatar {
+  gap: 1rem;
+}
+.about-us-content .avatar img {
+  opacity: 0.5;
+}
+.about-us-content span {
+  margin-top: 2.4rem;
+  display: block;
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.faq-header {
+  position: relative;
+}
+.faq-header h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 2.88px;
+  color: #f55;
+}
+.faq-header h2 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+}
+.faq-header img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+}
+
+.faq-card-parent .faq-child-one {
+  background-color: #f55;
+  color: #fff;
+  border-radius: 8px;
+  padding: 3rem 3.8rem;
+}
+.faq-card-parent .faq-child-one h4 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+}
+.faq-card-parent .faq-child-one p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.faq-card-parent .faq-child-two {
+  border-radius: 8px;
+  padding: 3rem 3.8rem;
+}
+.faq-card-parent .faq-child-two h4 {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+}
+.faq-card-parent .faq-child-two p {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 500;
+}
+
+.footer .fot-one img {
+  margin-bottom: 2rem;
+}
+.footer .fot-one .mail {
+  gap: 0.8rem;
+}
+.footer .fot-one .mail h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.footer .fot-two h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 3rem;
+}
+.footer .fot-two ul {
+  gap: 2.5rem;
+}
+.footer .fot-two ul li {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+}
+.footer .fot-two ul li:hover {
+  color: #f55;
+  cursor: pointer;
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  box-shadow: -13px 13px 104px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  padding: 1rem;
+}
+.form button {
+  border: none;
+  padding: 1.6rem 4.6rem;
+  font-size: 1.8rem;
+  background-color: #000;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-weight: 500;
+}
+.form input {
+  border: none;
+}
+.form input:focus {
+  outline: none;
+}
+
+.footer-hr {
+  margin-block: 8rem 6rem;
+}
+
+.copy-right {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.get-star-parent {
+  position: relative;
+}
+
+.get-star {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+  left: 0;
+}
+
+.get-star-right {
+  position: absolute;
+  top: -20%;
+  right: 0;
+}
+
+.get-start {
+  background: url(../images/get-bg.png) no-repeat;
+  background-position: inherit;
+  background-size: cover;
+  margin-block: 12rem;
+  border-radius: 0.8rem;
+  background-color: #000;
+}
+.get-start .get-start-content {
+  padding-left: 7.7rem;
+}
+.get-start .get-start-content h3 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+.get-start .get-start-content p {
+  max-width: 530px;
+  padding-block: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+.get-start .get-start-content button {
+  border: none;
+  padding: 1.6rem 4.6rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-weight: 500;
+  color: #000;
+  gap: 1.2rem;
+}
+
+@media (min-width: 1441px) {
+  .hero-star-right {
+    position: absolute;
+    top: -3%;
+    right: 5%;
+  }
+  .hero-star {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+  }
+  .feature-star {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    left: 5%;
+  }
+  .urify-star {
+    position: absolute;
+    top: 0;
+    right: 5%;
+  }
+  .about-star {
+    position: absolute;
+    bottom: -7%;
+    left: 5%;
+  }
+  .get-star-right {
+    position: absolute;
+    top: -20%;
+    right: 5%;
+  }
+  .get-star {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    padding-inline: 2rem !important;
+  }
+  .hero-parent {
+    gap: 2rem;
+  }
+  .hero-parent .hero-content {
+    margin-top: 2rem;
+  }
+  .hero-parent .hero-content h1 {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+  }
+  .hero-parent .hero-content p {
+    margin-block: 1.5rem 2rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+  }
+  .hero-parent .hero-content .button-flex {
+    gap: 2rem;
+  }
+  .hero-parent .hero-content {
+    padding-top: 0rem;
+  }
+  .feature-section {
+    padding-block: 6rem 1rem;
+  }
+  .feature-content h3 {
+    text-align: center;
+  }
+  .feature-content h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  .feature-content .feature-list .header h4 {
+    font-size: 1.6rem;
+  }
+  .feature-content .feature-list .feature-header-body p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .choose-list {
+    gap: 1.5rem;
+  }
+  .choose-list .choose-header h4 {
+    font-size: 2rem;
+  }
+  .choose-list .choose-header-body p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .about-us-section {
+    padding-block: 4rem;
+  }
+  .about-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .about-heading h2 {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+  }
+  .about-us-content {
+    padding: 0rem;
+  }
+  .about-us-content p {
+    padding-block: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .about-us-content .avatar {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .about-us-content span {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .faq-header h3 {
+    font-size: 1.6rem;
+  }
+  .faq-header h2 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+    margin-top: 0.7rem;
+  }
+  .faq-header img {
+    position: absolute;
+    top: 82%;
+    transform: translateY(-50%);
+    left: 79%;
+  }
+  .faq-card-parent .faq-child-one {
+    padding: 2rem;
+  }
+  .faq-card-parent .faq-child-one h4 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  .faq-card-parent .faq-child-one p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  .faq-card-parent .faq-child-two {
+    padding: 2rem;
+  }
+  .faq-card-parent .faq-child-two h4 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  .faq-card-parent .faq-child-two p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+  .get-start {
+    background: none;
+    margin-block: 3rem;
+    background-color: #000;
+  }
+  .get-start .get-start-content {
+    padding: 1.6rem;
+    text-align: center;
+  }
+  .get-start .get-start-content h3 {
+    font-size: 3.2rem;
+    font-weight: 600;
+  }
+  .get-start .get-start-content p {
+    padding-block: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  .get-start .get-start-content button {
+    margin: 0 auto;
+  }
+  .form {
+    gap: 3rem;
+  }
+  .footer {
+    margin-top: 8rem;
+    gap: 2rem;
+  }
+  .footer-hr {
+    margin-block: 6rem 4rem;
+  }
+  .copy-right {
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=main.css.map */

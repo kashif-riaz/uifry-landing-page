@@ -1,0 +1,667 @@
+@import "./variables";
+@import "./mixin";
+
+html {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ClashDisplay-Extralight";
+  src: url("../ClashDisplay-Variable.ttf");
+}
+
+body {
+  font-family: "ClashDisplay-Extralight";
+}
+
+// Header Start
+
+header {
+  padding-block: 1rem;
+  position: relative;
+}
+
+.nav-link {
+  font-size: $fs-20;
+  font-weight: $fw-500;
+  text-transform: capitalize;
+}
+
+.navbar-nav {
+  text-align: center;
+  gap: 1rem;
+}
+
+.navbar-brand {
+  margin-right: 5rem;
+}
+
+.button {
+  @include button($black-color);
+}
+
+
+// Hero section Start
+
+.hero-star-parent{
+  position: relative;
+}
+
+.hero-star{
+  position: absolute;
+  transform: rotate(45deg);
+  top: 2%;
+  left: 0;
+}
+
+.hero-star-right{
+  position: absolute;
+  top: -3%;
+  right: 0;
+}
+
+.hero-parent {
+  .hero-content {
+    padding-top: 12rem;
+    h1 {
+      font-size: $fs-64;
+      font-weight: $fw-700;
+      color: $black-color;
+    }
+    p {
+      margin-block: 2.4rem;
+      font-size: $fs-18;
+      line-height: 2.6rem;
+      font-weight: $fw-500;
+      color: $black-color;
+    }
+    .button-flex {
+      gap: 4rem;
+    }
+    button {
+      @include button($black-color);
+      img {
+        margin-left: 0.8rem;
+      }
+    }
+    .play {
+      gap: 1rem;
+      cursor: pointer;
+      span {
+        font-size: $fs-18;
+        font-weight: $fw-500;
+      }
+    }
+    .design-img {
+      margin-top: 1.8rem;
+    }
+  }
+}
+
+// Feature Section
+
+.feature-star-parent{
+  position: relative;
+}
+
+.feature-star{
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.feature-section {
+  padding-block: 6rem 0rem;
+}
+
+.feature-content {
+  h3 {
+    font-size: $fs-18;
+    color: $red-color;
+    font-weight: $fw-500;
+  }
+  h2 {
+    font-size: $fs-48;
+    color: $black-color;
+    font-weight: $fw-700;
+    margin-bottom: 3.2rem;
+  }
+  .feature-list {
+    gap: 1.2rem;
+    .header {
+      h4 {
+        margin-left: 1rem;
+        font-size: 1.8rem;
+        font-weight: $fw-600;
+      }
+    }
+    .feature-header-body {
+      p {
+        font-size: 1.8rem;
+        font-weight: $fw-500;
+        line-height: 2.6rem;
+      }
+    }
+  }
+}
+
+// Why choose Uifry
+
+.urify-star-parent{
+  position: relative;
+}
+
+.urify-star{
+  position: absolute;
+  top: 0;
+  right: 0px;
+}
+
+.choose-list {
+  gap: 2.3rem;
+  .choose-header {
+    gap: 1.5rem;
+    h4 {
+      font-size: $fs-28;
+      font-weight: $fw-600;
+    }
+  }
+  .choose-header-body {
+    p {
+      max-width: 500px;
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      font-weight: $fw-500;
+    }
+  }
+}
+
+// Fully Customizable
+
+.customize-star-parent{
+  position: relative;
+}
+
+.customize-star{
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  
+}
+
+// About us
+
+.about-star-parent{
+position: relative;
+}
+.about-star{
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: -7%;
+  left: 0;
+}
+
+
+.about-us-section {
+  padding-block: 8rem;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+  h3 {
+    padding-bottom: 0.7rem;
+    font-size: $fs-18;
+    font-weight: $fw-500;
+    color: $black-color;
+  }
+  h2 {
+    font-size: $fs-48;
+    line-height: 5.2rem;
+    font-weight: $fw-700;
+    color: $black-color;
+  }
+}
+
+.about-us-content {
+  padding: 1rem 18rem 1rem 1rem;
+  h3 {
+    font-size: $fs-28;
+    line-height: 3.2rem;
+    color: $black-color;
+    font-weight: $fw-600;
+  }
+  p {
+    padding-block: 2.4rem;
+    font-size: $fs-18;
+    line-height: 2.6rem;
+    color: $black-color;
+    font-weight: $fw-500;
+  }
+  .avatar {
+    gap: 1rem;
+    img {
+      opacity: 0.5;
+    }
+  }
+  span {
+    margin-top: 2.4rem;
+    display: block;
+    font-size: $fs-18;
+    color: $black-color;
+    font-weight: $fw-600;
+  }
+}
+
+// FAQ
+
+.faq-header {
+  position: relative;
+  h3 {
+    font-size: $fs-18;
+    font-weight: $fw-500;
+    letter-spacing: 2.88px;
+    color: $red-color;
+  }
+  h2 {
+    font-size: $fs-48;
+    font-weight: $fw-700;
+    line-height: 5.2rem;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+  }
+}
+.faq-card-parent {
+  .faq-child-one {
+    background-color: $red-color;
+    color: $white-color;
+    border-radius: 8px;
+    padding: 3rem 3.8rem;
+    h4 {
+      font-size: $fs-28;
+      line-height: 3.2rem;
+      font-weight: $fw-600;
+    }
+    p {
+      font-size: $fs-18;
+      line-height: 2.6rem;
+      margin-top: 1rem;
+      font-weight: $fw-500;
+    }
+  }
+  .faq-child-two {
+    border-radius: 8px;
+    padding: 3rem 3.8rem;
+    h4 {
+      font-size: $fs-28;
+      line-height: 3.2rem;
+      font-weight: $fw-600;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: $fs-18;
+      line-height: 2.6rem;
+      font-weight: $fw-500;
+    }
+  }
+}
+
+// Footer
+
+.footer {
+  .fot-one {
+    img {
+      margin-bottom: 2rem;
+    }
+    .mail {
+      gap: 0.8rem;
+      h2 {
+        font-size: 1.6rem;
+        font-weight: $fw-500;
+      }
+    }
+  }
+  .fot-two {
+    h3 {
+      font-size: $fs-32;
+      font-weight: $fw-500;
+      color: $black-color;
+      margin-bottom: 3rem;
+    }
+    ul {
+      gap: 2.5rem;
+      li {
+        font-size: $fs-16;
+        font-weight: $fw-500;
+        color: $black-color;
+        &:hover {
+          color: $red-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  background-color: rgb(255, 255, 255);
+  box-shadow: -13px 13px 104px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+  padding: 1rem;
+  button {
+    @include button($black-color);
+  }
+  input {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.footer-hr {
+  margin-block: 8rem 6rem;
+}
+
+.copy-right {
+  font-size: $fs-16;
+  font-weight: $fw-500;
+  margin-bottom: 3rem;
+}
+
+// Ready To Get Started
+
+.get-star-parent{
+  position: relative;
+}
+
+.get-star{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+    left: 0;
+}
+
+.get-star-right{
+  position: absolute;
+    top: -20%;
+    right: 0;
+}
+
+.get-start {
+  background: url(../images/get-bg.png) no-repeat;
+  background-position: inherit;
+  background-size: cover;
+  margin-block: 12rem;
+  border-radius: 0.8rem;
+  background-color: $black-color;
+  .get-start-content {
+    padding-left: 7.7rem;
+    h3 {
+      font-size: $fs-48;
+      font-weight: $fw-700;
+      color: $white-color;
+    }
+    p {
+      max-width: 530px;
+      padding-block: 1.6rem;
+      font-size: $fs-18;
+      line-height: 2.6rem;
+      font-weight: $fw-400;
+      color: $white-color;
+    }
+    button {
+      @include button($white-color);
+      color: $black-color;
+      gap: 1.2rem;
+    }
+  }
+}
+// Media Query
+
+@media (min-width: 1441px) {
+  .hero-star-right {
+    position: absolute;
+    top: -3%;
+    right: 5%;
+}
+.hero-star {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+.feature-star {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.urify-star {
+  position: absolute;
+  top: 0;
+  right: 5%;
+}
+.about-star {
+  position: absolute;
+  bottom: -7%;
+  left: 5%;
+}
+.get-star-right {
+  position: absolute;
+  top: -20%;
+  right: 5%;
+}
+.get-star {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+}
+
+
+
+@media (max-width: 991px) {
+  .container {
+    padding-inline: 2rem !important;
+  }
+
+  // Hero Section
+
+  .hero-parent {
+    gap: 2rem;
+    .hero-content {
+      margin-top: 2rem;
+      h1 {
+        font-size: $fs-32;
+        line-height: 3.6rem;
+        font-weight: $fw-600;
+      }
+      p {
+        margin-block: 1.5rem 2rem;
+        font-size: $fs-18;
+        line-height: 2.4rem;
+        font-weight: $fw-400;
+      }
+      .button-flex {
+        gap: 2rem;
+      }
+    }
+  }
+
+  .hero-parent .hero-content {
+    padding-top: 0rem;
+}
+
+  // Feature Section
+
+  .feature-section {
+    padding-block: 6rem 1rem;
+  }
+
+  .feature-content {
+    h3 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+      font-size: $fs-32;
+      margin-bottom: 2rem;
+    }
+    .feature-list {
+      .header {
+        h4 {
+          font-size: 1.6rem;
+        }
+      }
+      .feature-header-body {
+        p {
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+        }
+      }
+    }
+  }
+
+  // Why choose Uifry
+
+  .choose-list {
+    gap: 1.5rem;
+    .choose-header {
+      h4 {
+        font-size: $fs-20;
+      }
+    }
+    .choose-header-body {
+      p {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+      }
+    }
+  }
+
+  // About us
+
+  .about-us-section {
+    padding-block: 4rem;
+  }
+
+  .about-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+    h2 {
+      font-size: $fs-32;
+      line-height: 3.6rem;
+      font-weight: $fw-600;
+    }
+  }
+
+  .about-us-content {
+    padding: 0rem;
+
+    p {
+      padding-block: 1.6rem;
+      font-size: $fs-16;
+      line-height: 2.4rem;
+    }
+    .avatar {
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    span {
+      margin-top: 2rem;
+      font-size: $fs-16;
+    }
+  }
+
+  // FAQ
+
+  .faq-header {
+    h3 {
+      font-size: $fs-16;
+    }
+    h2 {
+      font-size: $fs-32;
+      font-weight: $fw-600;
+      line-height: 3.6rem;
+      margin-top: 0.7rem;
+    }
+    img {
+      position: absolute;
+      top: 82%;
+      transform: translateY(-50%);
+      left: 79%;
+    }
+  }
+
+  .faq-card-parent {
+    .faq-child-one {
+      padding: 2rem;
+      h4 {
+        font-size: $fs-20;
+        line-height: 2.4rem;
+      }
+      p {
+        font-size: $fs-16;
+        line-height: 2.6rem;
+      }
+    }
+    .faq-child-two {
+      padding: 2rem;
+      h4 {
+        font-size: $fs-20;
+        line-height: 2.4rem;
+      }
+      p {
+        font-size: $fs-16;
+        line-height: 2.6rem;
+      }
+    }
+  }
+
+  // Ready To Get Started
+
+  .get-start {
+    background: none;
+    margin-block: 3rem;
+    background-color: $black-color;
+    .get-start-content {
+      padding: 1.6rem;
+      text-align: center;
+      h3 {
+        font-size: $fs-32;
+        font-weight: $fw-600;
+      }
+      p {
+        padding-block: 1.6rem;
+        font-size: $fs-16;
+        line-height: 2.2rem;
+      }
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // Footer
+
+  .form {
+    gap: 3rem;
+  }
+  .footer {
+    margin-top: 8rem;
+    gap: 2rem;
+  }
+  .footer-hr {
+    margin-block: 6rem 4rem;
+  }
+  .copy-right {
+    font-weight: $fw-400;
+  }
+}
